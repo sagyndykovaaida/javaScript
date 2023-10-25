@@ -1,8 +1,12 @@
-let a= [1,2,3,4,5,6,7,8];
-let sum = 0;
-for (let i = 0; i < a.length; i++) {
-    if (a[i]%2 ==0){
-        sum+= a[i];
-    }
+let a = [1,2,4,6,7,8];
+function find(a){
+    let min = Math.min(...a);
+    let max = Math.max(...a);
+    return {
+        min:min,
+        max:max,
+    };
 }
-console.log(sum);
+console.log(find(a));
+
+
